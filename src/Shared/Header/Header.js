@@ -16,7 +16,7 @@ const Header = () => {
     const Menu = <>
 
       <li> <Link to='/'>Home</Link></li>
-      <li> <Link to='/purchase'>Purchase</Link></li>
+      
 
       <li>  { user ?<button  onClick={logout} className="btn btn-active btn-ghost">SignOut</button>  :  <Link to='/login'>Login</Link>}</li>
       

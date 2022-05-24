@@ -6,6 +6,10 @@ import Login from './Shared/Login/Login';
 import SignUp from './Shared/Login/SignUp';
 import Footer from './Shared/Footer/Footer';
 import RequreAuth from '../src/Shared/Login/RequreAuth'
+
+
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div >
@@ -22,6 +26,9 @@ function App() {
      
 
      <Footer></Footer>
+
+
+     <ToastContainer />
     </div>
   );
 }

@@ -11,12 +11,12 @@ const PartsCard = ({product}) => {
    }
 
     return (
-        <div class="card w-96 bg-secondary text-primary shadow-xl">
-  <figure class="px-10 pt-10">
-    <img src={img} alt="Shoes" class="rounded-xl" />
+        <div className="card w-96 bg-secondary text-primary shadow-xl">
+  <figure className="px-10 pt-10">
+    <img src={img} alt="Shoes" className="rounded-xl" />
   </figure>
-  <div class="card-body items-center text-center font-bold">
-    <h2 class="card-title">{name}</h2>
+  <div className="card-body items-center text-center font-bold">
+    <h2 className="card-title">{name}</h2>
     <p>{description} </p>
 
     <div className='flex p-3'>
@@ -28,8 +28,8 @@ const PartsCard = ({product}) => {
    <p>Price <small className='text-2xl'>{price}</small>$</p>
         
 
-    <div class="card-actions">
-      <button onClick={()=> handlePurchaseBtn(_id)} class="btn btn-primary">PURCHASE</button>
+    <div className="card-actions">
+      <button onClick={()=> handlePurchaseBtn(_id)} className="btn btn-primary">PURCHASE</button>
     </div>
   </div>
 </div>
