@@ -1,10 +1,17 @@
 import React from 'react';
+import Banar from './Banar';
+import Parts from './Parts'
 
 const Home = () => {
     return (
         <div>
-            <h1> this is home </h1>
+            <Banar></Banar>
+            <Parts></Parts>
         </div>
+
+
+
+
     );
 };
 
