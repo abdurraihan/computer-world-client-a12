@@ -17,7 +17,7 @@ const Parts = () => {
             setProducts(data)
           })
       
-      }, [])
+      }, [products])
 
     
     return (

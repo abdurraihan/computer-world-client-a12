@@ -15,10 +15,16 @@ const Header = () => {
 
     const Menu = <>
 
-      <li> <Link to='/'>Home</Link></li>
-      
+    <li> <Link to='/'>Home</Link></li>
+    <li> <Link to='/blog'>Blog</Link></li>
 
-      <li>  { user ?<button  onClick={logout} className="btn btn-active btn-ghost">SignOut</button>  :  <Link to='/login'>Login</Link>}</li>
+    {
+      user &&  <li> <Link to='/dashboard'> dashboard</Link></li>
+    }
+
+
+  
+  <li>  { user ?<button  onClick={logout} className="btn btn-active btn-ghost">SignOut</button>  :  <Link to='/login'>Login</Link>}</li>
       
        
     </>
