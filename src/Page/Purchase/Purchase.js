@@ -36,6 +36,7 @@ const Purchase = () => {
    
 
    const handleQuantity = (event) =>{
+       
         const inputQuantity = parseInt((event.target.value))
         if(inputQuantity < minimumQuantity)
         {

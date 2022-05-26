@@ -22,10 +22,11 @@ import NotFound from './Shared/NotFound';
 import Blog from './Page/Blog/Blog';
 import MakeAdmin from './Page/Dashboard/MakeAdmin';
 import AddProducts from './Page/Dashboard/AddProducts'
+import Portfolio from './Page/Portfolio/Portfolio';
 
 function App() {
   return (
-    <div >
+    <div  >
      <Header></Header>
 
 
@@ -61,7 +62,7 @@ function App() {
 
 
 
-
+          <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
 
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/signup' element={<SignUp></SignUp>}></Route>

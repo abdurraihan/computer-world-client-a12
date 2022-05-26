@@ -31,7 +31,7 @@ const Parts = () => {
 
     
     return (
-        <div>
+        <div className='overflow-auto '>
 
 <h2 className=' flex  justify-center font-serif text-3xl p-5 text-primary' > Parts Of Computer </h2>
           
