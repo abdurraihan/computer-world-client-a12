@@ -58,7 +58,7 @@ const AddProducts = () => {
 
              <div className='grid m-5'>
 
-             <input type="text" name='name' placeholder="Enter Product Name" className="input input-bordered input-secondary w-full max-w-xs " required />
+             <input type="text"  name='name' placeholder="Enter Product Name" className="input input-bordered input-secondary w-full max-w-xs " required />
 
                 <input type="text" name='description' placeholder="sort description" className="input input-bordered input-secondary w-full max-w-xs p-2 my-2"  required/>
 

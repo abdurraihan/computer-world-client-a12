@@ -85,7 +85,10 @@ const Purchase = () => {
       })
       .then(res => res.json())
       .then(data => {
-          console.log(data)
+          //console.log(data)
+          if (data.insertedId){
+          toast.success('your order is done')
+          }
       })
 
 
@@ -102,9 +105,9 @@ const Purchase = () => {
                
                {/* do something after main work */}
 
-  <div class="flex flex-col w-full lg:flex-row">
+  <div class="flex flex-col  w-full lg:flex-row">
 
-  <div class="grid flex-grow h-auto card bg-primary rounded-box place-items-center">
+  <div class="grid flex-grow  card bg-primary rounded-box place-items-center">
       
   <div className="card w-96 bg-secondary text-primary shadow-xl">
   <figure className="px-10 pt-10">
@@ -135,20 +138,20 @@ const Purchase = () => {
 
   <div class="grid flex-grow h-auto card bg-secondary rounded-box place-items-center">
 
-  <div class="card w-96 bg-primary shadow-xl">
+  <div class="card w-96 mb-24 bg-primary shadow-xl">
   <div class="card-body">
     <h2 class="card-title">Order From</h2>
    
   
     <form onSubmit={handleOrder}> 
-    <input className='mb-2' type="text" name='name' value={user?.displayName}  readOnly/>
-    <input className='mb-2' type="text" name='email' value={user?.email} readOnly />
+    <input className='mb-2 w-full input-bordered ' type="text" name='name' value={user?.displayName}  readOnly/>
+    <input className='mb-2 w-full input-bordered' type="text" name='email' value={user?.email} readOnly />
 
-    <input className='mb-2' placeholder="your address" type="text" name='address' required  />
+    <input className='mb-2 w-full input-bordered' placeholder="your address" type="text" name='address' required  />
 
-    <input className='mb-2' type='number' name='phone' placeholder='phone' required />
+    <input className='mb-2 w-full input-bordered' type='number' name='phone' placeholder='phone' required />
 
-    <input className='mb-2' onBlur={handleQuantity} type='number' name='quantity' placeholder='Quantity' required />
+    <input className='mb-2 w-full input-bordered' onBlur={handleQuantity} type='number' name='quantity' placeholder='Quantity' required />
 
      <br />
    
