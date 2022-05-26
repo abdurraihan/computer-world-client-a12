@@ -53,7 +53,6 @@ const ManageProducts = () => {
                             products.map((product, index) => <ManageRow
                                 key={product._id}
                                 product={product} index={index}
-
                                 setDeletingProduct={setDeletingProduct}>
 
                             </ManageRow>)
