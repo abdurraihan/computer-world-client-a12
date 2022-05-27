@@ -1,8 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState }  from 'react';
+import { useQuery } from 'react-query';
+import Loading from '../../Shared/Loading/Loading';
 import ReviewRow from './ReviewRow';
 
 const Review = () => {
 
+
+    const {data: reviews , state} = useQuery('reviews', ()=>fetch('http://localhost:5000/review', {
+        method: 'GET',
+
+        headers: {
+
+            authorization: `Bearer ${localStorage.getItem('accessToken')}`
+
+        }
+    })
+    .then(res => res.json()))
+
+    if(state ==='loading'){
+       return <Loading></Loading>
+
+    }
+
+
+/* 
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
         fetch('http://localhost:5000/review', {
@@ -18,7 +39,7 @@ const Review = () => {
         .then(data => setReviews(data));
 
     }, [reviews])
-    
+      */
 
 
     return (
@@ -29,7 +50,7 @@ const Review = () => {
 
          <div className='grid  grid-cols-1 lg:grid-cols-3 gap-4'>
           {
-                reviews.map(SingleReview =><ReviewRow key={SingleReview._id}
+                reviews?.map(SingleReview =><ReviewRow key={SingleReview._id}
                     SingleReview={SingleReview}
                 ></ReviewRow>)
             }
