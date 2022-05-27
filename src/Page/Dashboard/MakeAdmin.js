@@ -7,7 +7,7 @@ const MakeAdmin = () => {
     const [users , setAllUser] = useState([])
 
     useEffect( ()=>{
-        fetch('http://localhost:5000/users')
+        fetch('https://serene-ravine-48958.herokuapp.com/users')
         .then(res=> res.json())
         .then(data => setAllUser(data))
     } ,[users])
@@ -20,8 +20,8 @@ const MakeAdmin = () => {
         <div>
         <h2> all users : {users?.length} </h2>
 
-        <div class="overflow-x-auto">
-<table class="table w-full">
+        <div className="overflow-x-auto">
+<table className="table w-full">
 
 <thead>
   <tr>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState }  from 'react';
+import React from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../../Shared/Loading/Loading';
 import ReviewRow from './ReviewRow';
@@ -6,7 +6,7 @@ import ReviewRow from './ReviewRow';
 const Review = () => {
 
 
-    const {data: reviews , state} = useQuery('reviews', ()=>fetch('http://localhost:5000/review', {
+    const {data: reviews , state} = useQuery('reviews', ()=>fetch('https://serene-ravine-48958.herokuapp.com/review', {
         method: 'GET',
 
         headers: {
@@ -23,23 +23,7 @@ const Review = () => {
     }
 
 
-/* 
-    const [reviews, setReviews] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:5000/review', {
-            method: 'GET',
 
-            headers: {
-
-                authorization: `Bearer ${localStorage.getItem('accessToken')}`
-
-            }
-        })
-        .then(res => res.json())
-        .then(data => setReviews(data));
-
-    }, [reviews])
-      */
 
 
     return (

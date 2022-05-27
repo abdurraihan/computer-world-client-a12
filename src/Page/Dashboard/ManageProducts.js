@@ -10,7 +10,7 @@ const ManageProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products', {
+        fetch('https://serene-ravine-48958.herokuapp.com/products', {
 
             method: 'GET',
 
@@ -36,8 +36,8 @@ const ManageProducts = () => {
         <div >
             <h2 className="text-2xl">Manage products:{products.length}</h2>
 
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
 
                     <thead>
                         <tr>

@@ -7,7 +7,7 @@ const ManageAllOrders = () => {
     const [allOrder, setAllOrder] = useState([]);
 
     useEffect( ()=>{
-        fetch('http://localhost:5000/order',{
+        fetch('https://serene-ravine-48958.herokuapp.com/order',{
             method:'GET',
             headers:{
                 authorization: `Bearer ${localStorage.getItem('accessToken')}` 
@@ -19,8 +19,8 @@ const ManageAllOrders = () => {
     },[])
 
     return (
-        <div class="overflow-x-auto bg-primary">
-        <table class="table w-full ">
+        <div className="overflow-x-auto bg-primary">
+        <table className="table w-full ">
         
           <thead >
             <tr>

@@ -11,7 +11,7 @@ const Parts = () => {
     const [products , setProducts] = useState([]);
 
     useEffect( ()=>{
-        fetch('http://localhost:5000/products',{
+        fetch('https://serene-ravine-48958.herokuapp.com/products',{
 
           method:'GET',
 

@@ -16,7 +16,7 @@ const Purchase = () => {
      
     const [product , setProduct] = useState([])
     useEffect(()=>{
-        fetch(`http://localhost:5000/products/${_id}`)
+        fetch(`https://serene-ravine-48958.herokuapp.com/products/${_id}`)
         .then(res => res.json())
         .then(data => {
            // console.log(data)
@@ -76,7 +76,7 @@ const Purchase = () => {
       }
 
     
-      fetch('http://localhost:5000/order',{
+      fetch('https://serene-ravine-48958.herokuapp.com/order',{
             method: 'POST',
             headers: {
                 'content-Type': 'application/json',
@@ -106,9 +106,9 @@ const Purchase = () => {
                
                {/* do something after main work */}
 
-  <div class="flex flex-col  w-full lg:flex-row">
+  <div className="flex flex-col  w-full lg:flex-row">
 
-  <div class="grid flex-grow  card bg-primary rounded-box place-items-center">
+  <div className="grid flex-grow  card bg-primary rounded-box place-items-center">
       
   <div className="card w-96 bg-secondary text-primary shadow-xl">
   <figure className="px-10 pt-10">
@@ -135,13 +135,13 @@ const Purchase = () => {
       
  </div> 
 
-  <div class="divider lg:divider-horizontal">OR</div> 
+  <div className="divider lg:divider-horizontal">OR</div> 
 
-  <div class="grid flex-grow h-auto card bg-secondary rounded-box place-items-center">
+  <div className="grid flex-grow h-auto card bg-secondary rounded-box place-items-center">
 
-  <div class="card w-96 mb-24 bg-primary shadow-xl">
-  <div class="card-body">
-    <h2 class="card-title">Order From</h2>
+  <div className="card w-96 mb-24 bg-primary shadow-xl">
+  <div className="card-body">
+    <h2 className="card-title">Order From</h2>
    
   
     <form onSubmit={handleOrder}> 

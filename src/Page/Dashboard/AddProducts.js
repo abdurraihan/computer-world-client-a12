@@ -27,7 +27,7 @@ const AddProducts = () => {
             price: price
         }
        
-       fetch('http://localhost:5000/products',{
+       fetch('https://serene-ravine-48958.herokuapp.com/products',{
            method: 'POST',
            headers:{
                'content-type': 'application/json',

@@ -1,5 +1,5 @@
 import { signOut } from 'firebase/auth';
-import React, { useState } from 'react';
+import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useLocation } from 'react-router-dom';
 import auth from '../../firebase_init';
@@ -49,7 +49,7 @@ const Header = () => {
           {Menu}
         </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">Computer parts</a>
+    <a className="btn btn-ghost normal-case text-xl">Computer Of parts</a>
 </div>
 <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">

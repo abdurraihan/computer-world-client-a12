@@ -15,7 +15,7 @@ const MyOrderRow = ({index, order , setDeleteOrder }) => {
         <th>{index + 1}</th>
         <td>{name}</td>
         <td>{productName}</td>
-        <td> <label  onClick={()=>setDeleteOrder(order)} for="delete-confirm-modal" class="btn btn-xs btn-error">delete</label></td>
+        <td> <label  onClick={()=>setDeleteOrder(order)} htmlFor="delete-confirm-modal" className="btn btn-xs btn-error">delete</label></td>
 
       </tr>
 

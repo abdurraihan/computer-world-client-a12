@@ -15,7 +15,7 @@ const MyOrder = () => {
     const [myOrder, setMyOrder] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/order/${email}`, {
+        fetch(`https://serene-ravine-48958.herokuapp.com/order/${email}`, {
             method: 'GET',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -33,8 +33,8 @@ const MyOrder = () => {
 
         <div> 
 
-        <div class="overflow-x-auto">
-        <table class="table w-full">
+        <div className="overflow-x-auto">
+        <table className="table w-full">
           
           <thead>
             <tr>

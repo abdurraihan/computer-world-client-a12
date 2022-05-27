@@ -27,7 +27,7 @@ const MyProfile = () => {
             linkdin: linkdin
         }
 
-        fetch(`http://localhost:5000/profile/user/${email}`,{
+        fetch(`https://serene-ravine-48958.herokuapp.com/profile/user/${email}`,{
             method:'PUT',
             headers:{
                 'content-type': 'application/json'
