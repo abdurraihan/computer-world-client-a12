@@ -1,7 +1,11 @@
 import React from 'react';
+import Asking from './Asking';
 import Banar from './Banar';
+import BusinessSummary from './BusinessSummary';
+
 import Parts from './Parts'
 import Review from './Review';
+import SuplyChain from './SuplyChain';
 
 const Home = () => {
     return (
@@ -12,6 +16,11 @@ const Home = () => {
 
             <Review></Review>
             
+            <BusinessSummary></BusinessSummary>
+
+            <Asking></Asking>
+
+           <SuplyChain></SuplyChain>
             
         </div>
 

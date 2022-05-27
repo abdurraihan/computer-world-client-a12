@@ -38,18 +38,20 @@ const AddReview = () => {
         event.preventDefault()
         const ratings = event.target.rating.value;
         const description = event.target.description.value;
-
+        
         const review = {
-            ratings : ratings,
-            description:  description
+            ratings:ratings,
+            description:description
         }
        
+
         fetch('http://localhost:5000/review',{
             method:'POST',
             headers:{
+                'content-type': 'application/json',
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
             },
-            body: JSON.stringify(review)
+            body:JSON.stringify(review)
         })
         .then(res => res.json())
         .then(data =>{
