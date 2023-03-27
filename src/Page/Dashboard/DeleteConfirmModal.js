@@ -9,7 +9,7 @@ const DeleteConfirmModal = ({deletingProduct ,  setDeletingProduct}) => {
     const handleDelete = id=>{
 
       
-        fetch (`https://serene-ravine-48958.herokuapp.com/products/${_id}`,{
+        fetch (`https://https-github-com-abdurraihan-computer.onrender.com/products/${_id}`,{
             method:'DELETE',
             headers:{
                 authorization: `Bearer ${localStorage.getItem('accessToken')}` 

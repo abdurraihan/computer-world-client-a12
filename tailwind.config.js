@@ -6,11 +6,11 @@ module.exports = {
     extend: {},
   },
   daisyui: {
-    themes: [
+    themes: [ 
       {
         computer: {
-          primary: "#414B63",
-          secondary: "#D4D9E3",
+          primary: "#075985",
+          secondary: "#f0f9ff",
           accent: "#3A4256",
           neutral: "#3d4451",
         

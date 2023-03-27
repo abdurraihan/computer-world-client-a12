@@ -8,7 +8,7 @@ const MakeAdminRow = ({user , index }) => {
     console.log(role);
 
     const makeAdmin =()=>{
-        fetch(`https://serene-ravine-48958.herokuapp.com/user/admin/${email}`,{
+        fetch(`https://https-github-com-abdurraihan-computer.onrender.com/user/admin/${email}`,{
             method: 'PUT',
             headers:{
                 'content-type': 'application/json'

@@ -1,22 +1,32 @@
 
- import React from 'react';
+ import React, { useState } from 'react';
 
 import { toast } from 'react-toastify';
 
 const AddProducts = () => {
+   
+       
+    
+
+    const imageStorageKey = '7b3005c68af309d712501c8ec79e1a6a';
 
 
-
-
-    const handleAddProducts = event =>{
+    const handleAddProducts =  event =>{
         event.preventDefault()
 
-        const img = event.target.img.value;
+       
+
+
+
+
+        const img = event.target.img.file;
         const name = event.target.name.value;
         const description = event.target.description.value;
         const minium_order_quantity = event.target.minium_order_quantity.value;
         const available_quantity = event.target.available_quantity.value;
         const price = event.target.price.value;
+
+
 
         const products = {
             img: img,
@@ -27,7 +37,10 @@ const AddProducts = () => {
             price: price
         }
        
-       fetch('https://serene-ravine-48958.herokuapp.com/products',{
+        
+
+
+       fetch('https://https-github-com-abdurraihan-computer.onrender.com/products',{
            method: 'POST',
            headers:{
                'content-type': 'application/json',
@@ -75,7 +88,7 @@ const AddProducts = () => {
 
 
 
-                <input type="text" name='img' placeholder="Enter Product Image from your server" className="input input-bordered input-secondary w-full max-w-xs p-2 my-2" required />
+                <input type="file" name='img' placeholder="Enter Product Image from your server" className="input input-bordered input-secondary w-full max-w-xs p-2 my-2" required />
 
 
              </div>

@@ -15,7 +15,7 @@ const MyOrder = () => {
     const [myOrder, setMyOrder] = useState([])
 
     useEffect(() => {
-        fetch(`https://serene-ravine-48958.herokuapp.com/order/${email}`, {
+        fetch(`https://https-github-com-abdurraihan-computer.onrender.com/order/${email}`, {
             method: 'GET',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

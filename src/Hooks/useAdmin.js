@@ -7,7 +7,7 @@ const [adminLoading , setAdminLoading]=useState(true);
     useEffect( ()=>{
         const email = user?.email;
         if(email){
-            fetch(`https://serene-ravine-48958.herokuapp.com/admin/${email}`)
+            fetch(`https://https-github-com-abdurraihan-computer.onrender.com/admin/${email}`)
 
             .then(res => res.json())
             .then(data =>{

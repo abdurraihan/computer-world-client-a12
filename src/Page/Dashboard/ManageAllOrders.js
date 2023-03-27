@@ -3,11 +3,12 @@ import AllordersCard from './AllordersCard';
 
 const ManageAllOrders = () => {
 
+ 
 
     const [allOrder, setAllOrder] = useState([]);
 
     useEffect( ()=>{
-        fetch('https://serene-ravine-48958.herokuapp.com/order',{
+        fetch('https://https-github-com-abdurraihan-computer.onrender.com/order',{
             method:'GET',
             headers:{
                 authorization: `Bearer ${localStorage.getItem('accessToken')}` 

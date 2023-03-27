@@ -10,7 +10,7 @@ const ManageProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://serene-ravine-48958.herokuapp.com/products', {
+        fetch('https://https-github-com-abdurraihan-computer.onrender.com/products', {
 
             method: 'GET',
 

@@ -27,7 +27,7 @@ const MyProfile = () => {
             linkdin: linkdin
         }
 
-        fetch(`https://serene-ravine-48958.herokuapp.com/profile/user/${email}`,{
+        fetch(`https://https-github-com-abdurraihan-computer.onrender.com/profile/user/${email}`,{
             method:'PUT',
             headers:{
                 'content-type': 'application/json'
@@ -49,7 +49,7 @@ const MyProfile = () => {
        
         <div> 
 
-              <h2 className='m-5 text-3xl text-primary'>My Profile</h2>
+        <h2 className='m-5 text-3xl text-primary'>My Profile</h2>
            
         <form onSubmit={handleUser}>
 
@@ -75,7 +75,7 @@ const MyProfile = () => {
 
          </div>
 
-            <input className='btn my-2 bg-primary m-5' type="submit" value='order' />
+            <input className='btn my-2 bg-primary m-5' type="submit" value='UPDATE' />
 
         </form>
     </div>

@@ -6,7 +6,7 @@ import ReviewRow from './ReviewRow';
 const Review = () => {
 
 
-    const {data: reviews , state} = useQuery('reviews', ()=>fetch('https://serene-ravine-48958.herokuapp.com/review', {
+    const {data: reviews , state} = useQuery('reviews', ()=>fetch('https://https-github-com-abdurraihan-computer.onrender.com/review', {
         method: 'GET',
 
         headers: {
@@ -43,6 +43,10 @@ const Review = () => {
          </div>
 
         </div>
+
+
+
+
     );
 };
 

@@ -4,9 +4,11 @@ const ReviewRow = ({SingleReview}) => {
 
     const{ratings , description} = SingleReview;
    
-    
+  
     return (
-        <div className="card w-96 bg-secondary shadow-xl">
+  
+
+  <div className="card w-96 bg-secondary shadow-xl">
   <div className="card-body">
   <h2 className="card-title"></h2>
       
@@ -17,13 +19,14 @@ const ReviewRow = ({SingleReview}) => {
 </div>
   </div>
         
- 
  <p className='text-primary'>{description}</p>
     <div className="card-actions justify-end">
      
         </div>
   </div>
 </div>
+
+
     );
 };
 

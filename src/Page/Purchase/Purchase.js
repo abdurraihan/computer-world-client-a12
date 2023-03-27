@@ -16,7 +16,7 @@ const Purchase = () => {
      
     const [product , setProduct] = useState([])
     useEffect(()=>{
-        fetch(`https://serene-ravine-48958.herokuapp.com/products/${_id}`)
+        fetch(`https://https-github-com-abdurraihan-computer.onrender.com/products/${_id}`)
         .then(res => res.json())
         .then(data => {
            // console.log(data)
@@ -76,7 +76,7 @@ const Purchase = () => {
       }
 
     
-      fetch('https://serene-ravine-48958.herokuapp.com/order',{
+      fetch('https://https-github-com-abdurraihan-computer.onrender.com/order',{
             method: 'POST',
             headers: {
                 'content-Type': 'application/json',

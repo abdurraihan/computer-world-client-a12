@@ -7,7 +7,7 @@ const MakeAdmin = () => {
     const [users , setAllUser] = useState([])
 
     useEffect( ()=>{
-        fetch('https://serene-ravine-48958.herokuapp.com/users')
+        fetch('https://https-github-com-abdurraihan-computer.onrender.com/users')
         .then(res=> res.json())
         .then(data => setAllUser(data))
     } ,[users])

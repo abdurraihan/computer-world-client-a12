@@ -45,7 +45,7 @@ const AddReview = () => {
         }
        
 
-        fetch('https://serene-ravine-48958.herokuapp.com/review',{
+        fetch('https://https-github-com-abdurraihan-computer.onrender.com/review',{
             method:'POST',
             headers:{
                 'content-type': 'application/json',

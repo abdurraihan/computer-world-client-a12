@@ -4,7 +4,7 @@ import Home from '../src/Page/Home/Home'
 import Purchase from './Page/Purchase/Purchase';
 import Login from './Shared/Login/Login';
 import SignUp from './Shared/Login/SignUp';
-import Footer from './Shared/Footer/Footer';
+
 import RequreAuth from '../src/Shared/Login/RequreAuth'
 
 
@@ -19,9 +19,9 @@ import ManageProducts from './Page/Dashboard/ManageProducts';
 import ManageAllOrders from './Page/Dashboard/ManageAllOrders';
 
 import NotFound from './Shared/NotFound';
-import Blog from './Page/Blog/Blog';
+// import Blog from './Page/Blog/Blog';
 import MakeAdmin from './Page/Dashboard/MakeAdmin';
-import AddProducts from './Page/Dashboard/AddProducts'
+import AddProducts from './Page/Dashboard/AddProducts';
 import Portfolio from './Page/Portfolio/Portfolio';
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
         <Purchase></Purchase>
        </RequreAuth>} ></Route>
 
-        <Route path='/blog' element={<Blog></Blog>}></Route>
+       {/* <Route path='/blog' element={<Blog></Blog>}></Route> */}
 
 
         <Route path="/dashboard" element={<RequreAuth>
@@ -90,7 +90,7 @@ function App() {
 
 
 
-     <Footer></Footer>
+   
 
 
      <ToastContainer />
