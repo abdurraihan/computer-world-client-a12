@@ -20,12 +20,13 @@ const Header = () => {
 
     const Menu = <>
 
-    <li> <Link to='/'>Home</Link></li>
-    <li> <Link to='/blog'>Blog</Link></li>
-    <li> <Link to='/portfolio'>Portfolio</Link></li>
+    <li> <Link to='/'>HOME</Link></li>
+   
+  
+    <li> <Link to='/products'>PRODUCTS</Link></li>
 
     {
-      user &&  <li> <Link to='/dashboard'> dashboard</Link></li>
+      user &&  <li> <Link to='/dashboard'> DASHBOARD</Link></li>
     }
 
 

@@ -23,6 +23,7 @@ import NotFound from './Shared/NotFound';
 import MakeAdmin from './Page/Dashboard/MakeAdmin';
 import AddProducts from './Page/Dashboard/AddProducts';
 import Portfolio from './Page/Portfolio/Portfolio';
+import Products from './Page/Products/Products';
 
 function App() {
   return (
@@ -60,7 +61,7 @@ function App() {
 
         </Route>
 
-
+          <Route path='/products' element={<Products></Products>}></Route>
 
           <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
 
